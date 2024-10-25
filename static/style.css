@@ -1,0 +1,80 @@
+h1 {
+    font-size: 64px;
+    text-align: center
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 300px auto;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textarea-container textarea {
+    width: 48%;
+    height: 300px;
+    resize: none;
+    margin-right: auto;
+    font-size: 24px;
+}
+
+#message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+#input3 {
+    width: 100%;
+    margin-top: 100px;
+    font-size: 24px;
+}
+
+#sendMessage {
+    width: 100px;
+    height: 40px;
+    font-size: 28px;
+    font-family: 华文行楷;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#notice {
+    font-size: 28px;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    color: green;
+}
+
+#time{
+    font-size: 20px;
+    font-family: 华文楷体;
+}
+
+#tips {
+    font-size: 20px;
+    font-family: 华文楷体;
+    font-weight: bold;
+    color: #005eeb;
+}
+
+#tips a{
+    color:red;
+    text-decoration: none;
+}
+
+#thank {
+    font-size: 24px;
+    font-family: 华文楷体;
+    color: #ff7733;
+    font-weight: bold;
+}

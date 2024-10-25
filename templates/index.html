@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>ZSX Encryption System</title>
+    <script src="{{ url_for('static', filename='vue.js') }}"></script>
+</head>
+<body>
+<div id="app">
+    <h1>ZSX Encryption System V3</h1>
+    <br/><br/>
+
+    <div class="textarea-container">
+        <textarea id="input1" placeholder="请输入明文" v-model="inputText1" @input="handleInput1"
+                  @dblclick="copyToClipboard(inputText1)"></textarea>
+        <textarea id="input2" wrap="hard" placeholder="请输入密文" v-model="inputText2" @input="handleInput2"
+                  @dblclick="copyToClipboard(inputText2)"></textarea>
+    </div>
+
+    <div id="message">
+        <textarea cols="100" id="input3" placeholder="有什么想对作者说的？😊ヾ(≧▽≦*)o" rows="4"
+                  v-model="inputText3" @dblclick="copyToClipboard(inputText3)"></textarea>
+        <button id="sendMessage" v-on:click="sendMessage">留言</button>
+    </div>
+
+    <br><br><br>
+    <hr>
+
+    <span id="notice">公告栏</span>
+    <span id="time">(最后更新于：2024-5-20)</span><br>
+    <br>
+    <span id="tips">
+        已更新加密算法V3，破解奖励: ￥200<br>网站已做限流请不要尝试爆破，双击输入框可以复制，祝大家解密顺利<br>
+        原视频:
+        <a target="_blank"
+           href="https://www.bilibili.com/video/BV1uH4y1T7ao/">
+            自创了一个字符串加密算法......</a><br><br>
+    </span>
+
+    <span id="thank">
+        特别鸣谢: 技术指导: DWC、蔡鑫培Peter (加密可穿越)
+    </span>
+</div>
+
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css"/>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+
+</body>
+</html>
