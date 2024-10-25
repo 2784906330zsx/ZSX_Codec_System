@@ -20,10 +20,4 @@ def query_ip_location(ip_address):
             return "Unknown", "Unknown", "Unknown", "Unknown", "Unknown"
     else:
         return "Unknown", "Unknown", "Unknown", "Unknown", "Unknown"
-
-
-# Example usage:
-ip_address = "8.218.192.192"  # Replace this with the IP address you want to query
-country, province, city, isp, net = query_ip_location(ip_address)
-print(f"The IP address {ip_address} is located in {city}, {province}, {country}.")
-print(f"The ISP of this IP address is {isp}, and it's using {net} network.")
+    

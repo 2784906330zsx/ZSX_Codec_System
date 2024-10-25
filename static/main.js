@@ -18,7 +18,7 @@ const app = new Vue({
             if (this.inputText1 === "DWC") {
                 window.location.href = 'https://love.sdju.chat';
             } else if (this.inputText1 === "蔡鑫培Peter") {
-                window.location.href = 'https://space.bilibili.com/123016785/favlist';
+                window.location.href = 'https://space.bilibili.com/123016785';
             } else {
                 this.lock();
             }

@@ -46,5 +46,3 @@ def lock(src):
 
     result = confuse1(confuse2(result))
     return result
-
-print(lock("请在这里加密“8964”"))

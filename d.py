@@ -44,8 +44,8 @@ def decrypt(enc):
     return content
 
 
-if __name__ == '__main__':
-	enc = '39o{9B{GB4KUgaf=85-DACN2f;VC3wx56Jf54;5B|5yPKb97049<27xkyM6iC9J]AH]12Lf9V]Cz6b:2I10an-Tf70}1'
-	print(decrypt(enc))
+if __name__ == "__main__":
+    enc = "39o{9B{GB4KUgaf=85-DACN2f;VC3wx56Jf54;5B|5yPKb97049<27xkyM6iC9J]AH]12Lf9V]Cz6b:2I10an-Tf70}1"
+    print(decrypt(enc))
 
 # print(str_merge("123", "456"))
